@@ -1,14 +1,32 @@
-.navbar {
-    width: 50%;
-    
-    background-color: #FE4848;
 
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    font-size: 1rem !important;
+body {
+    background-color: #FE4848;
 }
 
-header {
-    display: flex;
-    justify-content: center;
+
+.sectionTopBar {
+    width: 100%;
+    height: 5rem;
+    background-color: #FE4848;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+
+    background-color: #FE4848;
+    color: white;
+
+    padding: 0.5rem 1rem;
+    float: left;
+}
+
+.mainContainer {   
+    width: 80%;
+
+    margin-top: ;
+
+    background-color: white;
+
+    float: left;
 }
