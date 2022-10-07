@@ -1,0 +1,14 @@
+.navbar {
+    width: 50%;
+    
+    background-color: #FE4848;
+
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-size: 1rem !important;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
