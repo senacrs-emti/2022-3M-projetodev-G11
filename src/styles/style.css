@@ -41,17 +41,20 @@ body {
 .sidebar ul {
     margin-top: 5rem;
     padding-left: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sidebar ul li {
-    background-color: #ff6666;
+    color: white;
 
-    padding: 0.5rem 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
     list-style: none;
-
-    border-radius: 0.45rem;
-
-    box-shadow: 8px 10px 5px 0px #fc7a7a inset;
 }
 
 /* Main Container */
