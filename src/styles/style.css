@@ -5,6 +5,10 @@
     --primary-color: #FE4848;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 body {
     background-color: var(--primary-color) !important;
 }
@@ -62,6 +66,20 @@ body {
     align-items: center;
 
     list-style: none;
+
+    border-radius: 1.5rem;
+    padding: 0.2rem 0.75rem;
+}
+
+.sidebar ul li:hover {
+    transition: 0.3s;
+    background-color: black;
+    filter: invert(100%);
+}
+
+.active {
+    background-color: black !important;
+    filter: invert(100%) !important;
 }
 
 .sidebar img {
@@ -69,7 +87,7 @@ body {
 
     filter: invert(100%);
 
-    margin: 5px;
+    margin-right: 1rem;
 }
 
 /* Main Container */

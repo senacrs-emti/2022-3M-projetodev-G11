@@ -1,3 +1,5 @@
+////////////////////////////////////////////
+
 const labels = [
   'January',
   'February',
@@ -41,3 +43,31 @@ const myChart = new Chart(
   document.getElementById('myChart'),
   config
 );
+
+///////////////////////////////////////////////////////
+
+
+function handleActiveButton() {
+
+    let url = window.location.href;
+    let mainURL = window.location.origin;
+    console.log(url)
+    console.log(mainURL)
+
+    let str = url.split("http://127.0.0.1:5500/src/pages/")[1]
+
+    if (!str) {
+
+      const li = document.getElementById("li1");
+      li.classList.add("active");
+
+    } else if(str == "teste.html") {
+
+      const li = document.getElementById("li2");
+      li.classList.add("active");
+
+    }
+
+}
+
+handleActiveButton();
