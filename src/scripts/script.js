@@ -54,7 +54,7 @@ function handleActiveButton() {
     console.log(url)
     console.log(mainURL)
 
-    let str = url.split("http://127.0.0.1:5500/src/pages/")[1]
+    let str = url.split("localhost:8080/src/pages/")[1]
 
     if (!str) {
 
