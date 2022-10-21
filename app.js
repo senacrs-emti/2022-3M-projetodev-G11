@@ -24,7 +24,7 @@ const Sequelize = require("sequelize");
 //Routes
 
   app.get('/cad', function(req, res) {
-    res.render('./layouts/cadForm')
+    res.render('cadForm')
   })
 
   app.get('/singup', function(req, res) {
