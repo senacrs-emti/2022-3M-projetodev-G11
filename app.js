@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { engine } = require ('express-handlebars');
-const handlebars = require("express-handlebars");
+const exphbs = require("express-handlebars");
 const Sequelize = require("sequelize");
 
 
@@ -9,12 +9,12 @@ const Sequelize = require("sequelize");
 // Config
   // Template Engine
 
-  app.engine("handlebars", engine())
-  app.set("view engine", "handlebars")
+  app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
+
+  app.set("view engine", "hbs");
   // app.set("views", "./views");
 
   // DataBase Conection
-
   const sequelize = new Sequelize('vitydb', 'root', 'admin', {
     host: "localhost",
     dialect: "mysql"
@@ -23,6 +23,10 @@ const Sequelize = require("sequelize");
   //
 //Routes
 
+  
+  app.get('/', function(req, res) {
+    res.render('home')
+  })
   app.get('/cad', function(req, res) {
     res.render('cadForm')
   })
