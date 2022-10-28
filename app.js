@@ -6,12 +6,14 @@ const Sequelize = require("sequelize");
 
 
 
+
 // Config
   // Template Engine
 
   app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
 
   app.set("view engine", "hbs");
+  app.use(express.static(__dirname + '/public'));
   // app.set("views", "./views");
 
   // DataBase Conection
