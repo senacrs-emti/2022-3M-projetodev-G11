@@ -33,6 +33,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .sidebar h1 {
@@ -62,13 +65,15 @@ body {
     font-size: 1.35rem;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     list-style: none;
 
     border-radius: 1.5rem;
     padding: 0.2rem 0.75rem;
+
+    width: 130%;
 }
 
 .sidebar ul li:hover {
