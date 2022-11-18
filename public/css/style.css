@@ -21,7 +21,7 @@ body {
 }
 
 .sidebar {
-    width: 20%;
+    
     height: 100vh;
 
     background-color: var(--primary-color);
@@ -36,6 +36,7 @@ body {
 
     margin-right: 0;
     padding-right: 0;
+    width: 20%;
 }
 
 .sidebar h1 {
@@ -54,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .sidebar ul li {
@@ -70,10 +72,15 @@ body {
 
     list-style: none;
 
-    border-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
     padding: 0.2rem 0.75rem;
 
-    width: 130%;
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
 }
 
 .sidebar ul li:hover {

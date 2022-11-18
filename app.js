@@ -33,7 +33,7 @@ const Sequelize = require("sequelize");
     res.render('cadForm')
   })
 
-  app.get('/singup', function(req, res) {
+  app.get('/signup', function(req, res) {
     
   })
 
