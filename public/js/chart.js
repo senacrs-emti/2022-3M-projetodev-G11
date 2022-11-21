@@ -1,9 +1,10 @@
-////////////////////////////////////////////
+///////////////////////////////////////////
+// import Chart from 'chart.js/auto';
 
 const labels = [
-    'January',
-    'February',
-    'March',
+    'Contas',
+    'Academia',
+    '',
     'April',
     'May',
     'June',
