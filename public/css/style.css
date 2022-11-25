@@ -87,11 +87,13 @@ body {
     transition: 0.3s;
     background-color: black;
     filter: invert(100%);
+    box-shadow: -5px 0px 0px 5px #004040;
 }
 
 .active {
     background-color: black !important;
     filter: invert(100%) !important;
+    box-shadow: -5px 0px 0px 5px #004040;
 }
 
 .sidebar img {
@@ -117,6 +119,7 @@ body {
     background-color: white;
 
     float: left;
+    box-shadow: -5px 5px 0px 5px #ffbfbf;
 }
 
 #myChart {

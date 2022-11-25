@@ -32,7 +32,7 @@ const labels = [
         legend: {
           labels: {
             font: {
-              size: 32
+              size: 24
             }
           }
         }
